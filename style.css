@@ -75,3 +75,10 @@
 .private>div:last-child{grid-column:1/-1;grid-row:2;max-width:720px;width:100%}
 }
 @media(max-width:620px){.private{display:block}.private-photo{margin-bottom:28px}.offering-body{padding-top:28px}}
+/* Trim the toes from the lower edge while retaining the seated pose. */
+.hero-image img{width:100%;height:auto;aspect-ratio:1179 / 1370;object-fit:cover;object-position:center top}
+.hero-image img{border-radius:50% 50% 8px 8px / 35% 35% 8px 8px}
+
+.class-guide{font-size:12px;line-height:1.65;margin:25px 0 30px;max-width:600px}.class-guide-label{font-size:10px;letter-spacing:1.5px;margin-bottom:12px}.class-guide dl{margin:0}.class-guide dl>div{padding:12px 0;border-top:1px solid var(--line)}.class-guide dt{font-weight:bold}.class-guide dd{margin:5px 0 0;color:var(--muted)}
+/* Show the complete bio pose inside its existing rounded frame. */
+.about-photo img{height:auto;max-height:none;aspect-ratio:auto;object-fit:contain;border-radius:6px 6px 130px 6px}
