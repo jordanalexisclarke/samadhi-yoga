@@ -19,3 +19,18 @@
 .about-photo img{object-position:center;border-radius:6px 6px 130px 6px}
 @media(max-width:580px){.practice-grid h3{font-size:30px}.private-photo{max-width:none;height:320px}.private>div:last-child{padding-top:0}.rate{flex-wrap:wrap;gap:5px}.hero h1{font-size:54px}}
 .offerings .section-top>p:last-child{grid-column:auto}
+
+/* Offerings read as distinct, vertically stacked sections. */
+.offering-grid{display:flex;flex-direction:column;gap:65px}
+.offering-section{border:0;border-top:1px solid var(--line);padding-top:40px}
+.offering-grid img{height:auto;max-height:600px;object-fit:contain;border-radius:6px}
+.offering-body{padding:30px 0 0;max-width:720px}
+.saturday{background:transparent}
+.offering-body h3{font-size:40px}
+.schedule div{flex-direction:row}
+.private{display:block;margin-top:65px;padding-top:40px;border-top:1px solid var(--line)}
+.private-photo{height:auto;max-width:100%;max-height:650px;object-fit:contain;margin-bottom:35px}
+.private-intro p:not(.eyebrow){max-width:650px}
+.private>div:last-child{max-width:720px;padding-top:15px}
+.rate{flex-direction:row}
+@media(max-width:580px){.offering-grid{gap:45px}.offering-body h3{font-size:34px}.offering-grid img{height:auto}.private-photo{height:auto}.private{margin-top:45px}.rate{gap:8px}.schedule div{flex-wrap:wrap;gap:2px 15px}}
