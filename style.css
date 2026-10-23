@@ -18,3 +18,4 @@
 .private>div:last-child{padding-top:35px}
 .about-photo img{object-position:center;border-radius:6px 6px 130px 6px}
 @media(max-width:580px){.practice-grid h3{font-size:30px}.private-photo{max-width:none;height:320px}.private>div:last-child{padding-top:0}.rate{flex-wrap:wrap;gap:5px}.hero h1{font-size:54px}}
+.offerings .section-top>p:last-child{grid-column:auto}
