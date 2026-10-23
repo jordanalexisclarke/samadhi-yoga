@@ -147,3 +147,5 @@ header .brand img{width:105px;height:60px}
 header .mobile-nav{gap:10px;font-size:11px}
 header .mobile-nav .button{font-size:10px;padding:10px}
 }
+
+.offering-grid>.private{margin-top:0;padding-bottom:0;border-bottom:0}
