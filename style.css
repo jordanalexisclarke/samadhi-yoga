@@ -56,3 +56,22 @@
 .curated-audiences span{display:block;color:var(--muted);font-size:14px;margin-top:5px}
 .curated .button{margin-top:15px}
 @media(max-width:580px){.offering-grid img,.private-photo{max-height:320px}.curated{margin-top:45px}.offering-jumps li{padding:10px 0}}
+/* Preserve the full hero photograph and give the definitions a clear home. */
+.hero-image img{height:auto;aspect-ratio:auto;border-radius:8px;object-fit:contain}
+.hero-note{margin-top:35px;padding-top:22px;border-top:1px solid var(--line);gap:18px;align-items:center;max-width:470px}
+.hero-note p{font-size:15px;line-height:1.85;margin:0;color:var(--muted)}
+.hero-note strong{font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:normal;color:var(--ink)}
+.hero-note .sun{font-size:52px;flex-shrink:0}
+@media(max-width:580px){.hero-image img{height:auto;border-radius:8px}.hero-note{margin:28px 0 15px}.hero-note p{font-size:14px}.hero-note strong{font-size:21px}}
+
+/* Keep each offering compact, with its photograph alongside. */
+@media(min-width:621px){
+.studio.offering-section,.saturday.offering-section{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:start}
+.offering-section>.offering-body{grid-column:1;grid-row:1;padding:0}
+.offering-section>img{grid-column:2;grid-row:1;width:100%;height:auto;max-height:390px;object-fit:contain}
+.private{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:25px 40px}
+.private>.private-photo{grid-column:2;grid-row:1;width:100%;height:auto;margin:0;max-height:390px}
+.private>.private-intro{grid-column:1;grid-row:1}
+.private>div:last-child{grid-column:1/-1;grid-row:2;max-width:720px;width:100%}
+}
+@media(max-width:620px){.private{display:block}.private-photo{margin-bottom:28px}.offering-body{padding-top:28px}}
