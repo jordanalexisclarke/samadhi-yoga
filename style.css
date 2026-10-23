@@ -82,3 +82,24 @@
 .class-guide{font-size:12px;line-height:1.65;margin:25px 0 30px;max-width:600px}.class-guide-label{font-size:10px;letter-spacing:1.5px;margin-bottom:12px}.class-guide dl{margin:0}.class-guide dl>div{padding:12px 0;border-top:1px solid var(--line)}.class-guide dt{font-weight:bold}.class-guide dd{margin:5px 0 0;color:var(--muted)}
 /* Show the complete bio pose inside its existing rounded frame. */
 .about-photo img{height:auto;max-height:none;aspect-ratio:auto;object-fit:contain;border-radius:6px 6px 130px 6px}
+
+/* Keep private-session details together beside the image. */
+.private-copy{min-width:0}
+.private-copy .private-intro p:not(.eyebrow){margin-bottom:15px}
+.private-copy .rate{padding:11px 0;display:flex;flex-direction:column;gap:2px;font-size:13px}
+.private-copy .rate strong{font-size:14px}
+.private-copy .text-link{margin-top:18px}
+.private>div.private-copy{padding-top:0}
+.curated{max-width:none}
+.curated-copy{min-width:0}
+.curated-photo{display:block;width:100%;height:auto;border-radius:6px;object-fit:contain;margin-bottom:28px}
+.curated-copy>p:not(.eyebrow){color:var(--muted)}
+@media(min-width:621px){
+.private{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:start;gap:40px}
+.private>div.private-copy{grid-column:1;grid-row:1;max-width:none;width:auto;padding:0}
+.private>.private-photo{grid-column:2;grid-row:1;align-self:start;max-height:none;width:100%;height:auto}
+.curated{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:start}
+.curated>.curated-copy{grid-column:1;grid-row:1}
+.curated>.curated-photo{grid-column:2;grid-row:1;width:100%;height:auto;max-height:none;margin:0}
+.curated h3{font-size:clamp(30px,3vw,42px)}
+}
