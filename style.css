@@ -124,3 +124,26 @@
 @media(max-width:620px){.coreclub-gallery{margin-bottom:28px}}
 /* Soften the bright sunlight in the hero photograph. */
 .hero-image img{filter:brightness(.82) contrast(.88)}
+/* Restore the hero's original color; align offering image widths. */
+.hero-image img{filter:none}
+.saturday.offering-section>img,.private>.private-photo,.curated>.curated-photo{display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain;margin-right:0;justify-self:stretch}
+.coreclub-gallery{width:100%;max-width:100%;justify-self:stretch}
+@media(min-width:621px){
+.studio.offering-section,.saturday.offering-section,.private,.curated{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);column-gap:40px}
+}
+
+/* Use identical text-independent arrows across desktop and phones. */
+.arrow-icon{display:inline-block;vertical-align:middle;flex-shrink:0;color:inherit}
+.mobile-nav{display:none}
+@media(max-width:850px){
+header .desktop-nav{display:none}
+header .mobile-nav{display:flex;gap:12px;align-items:center;font-size:12px}
+header .mobile-nav>a:not(.button){display:inline-block}
+header .mobile-nav .button{font-size:11px;padding:10px 12px;white-space:nowrap}
+}
+@media(max-width:580px){
+header{padding-left:5%;padding-right:5%;gap:10px}
+header .brand img{width:105px;height:60px}
+header .mobile-nav{gap:10px;font-size:11px}
+header .mobile-nav .button{font-size:10px;padding:10px}
+}
