@@ -103,3 +103,14 @@
 .curated>.curated-photo{grid-column:2;grid-row:1;width:100%;height:auto;max-height:none;margin:0}
 .curated h3{font-size:clamp(30px,3vw,42px)}
 }
+
+/* Pair each CORECLUB photo with the relevant text. */
+@media(min-width:621px){
+.studio.offering-section{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:30px 40px;align-items:start}
+.studio.offering-section>img:first-child{grid-column:2;grid-row:1}
+.studio.offering-section>.coreclub-class-photo{grid-column:2;grid-row:2;max-height:none;width:100%;height:auto}
+.studio.offering-section>.class-guide{grid-column:1;grid-row:2;margin:0}
+.studio.offering-section>.offering-body{grid-column:1;grid-row:1}
+}
+.studio.offering-section>.class-guide .button{margin-top:20px}
+@media(max-width:620px){.studio.offering-section>.coreclub-class-photo{margin-top:20px}.studio.offering-section>.class-guide{margin-top:25px}}
